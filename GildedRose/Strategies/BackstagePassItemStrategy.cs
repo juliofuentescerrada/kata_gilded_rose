@@ -12,11 +12,11 @@
                 return;
             }
 
-            var factor = ItemQualityModifier.Normal;
-            if (Item.SellIn < 11) factor = ItemQualityModifier.Fast;
-            if (Item.SellIn < 6) factor = ItemQualityModifier.Faster;
+            var modifier = ItemQualityModifier.Normal;
+            if (Item.SellIn < 11) modifier = ItemQualityModifier.Fast;
+            if (Item.SellIn < 6) modifier = ItemQualityModifier.Faster;
          
-            Item.IncreaseQuality(factor);
+            Item.IncreaseQuality(modifier);
         }
     }
 }

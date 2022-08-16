@@ -6,9 +6,9 @@
 
         protected override void UpdateQuality()
         {
-            var factor = ItemQualityModifier.Fast;
-            if (Item.IsExpired()) factor = ItemQualityModifier.Fastest;
-            Item.DecreaseQuality(factor);
+            var modifier = ItemQualityModifier.Fast;
+            if (Item.IsExpired()) modifier = ItemQualityModifier.Fastest;
+            Item.DecreaseQuality(modifier);
         }
     }
 }
